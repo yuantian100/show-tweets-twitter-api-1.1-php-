@@ -8,10 +8,10 @@ There are four important files: <br>
 
 <b>twitter/OAuth.php</b> and <b>twitter/twitteroauth.php</b> : twitter api library provided by abraham. ( you don't need to change any code here)
 
-<b>twitter/tweets.php</b> (include all your twitter setting, CONSUMER_KEY, CONSUMER_SECRET...), change it use yours
-
+<b>twitter/tweets.php</b> (include all your twitter settings, CONSUMER_KEY, CONSUMER_SECRET...), change it use yours
 
 <b>index.php</b>: some basic html code to show the tweets result.
 
+The 'tmp' folder is used to cache your twitter data. You can change cache path and time settings at <b>twitter/tweets.php</b>
 
 
