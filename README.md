@@ -12,6 +12,8 @@ There are four important files: <br>
 
 <b>index.php</b>: some basic html code to show the tweets result.
 
+<h2>Cache data</h2>
+
 The 'tmp' folder is used to cache your twitter data. You can change cache path and time settings at <b>twitter/tweets.php</b>
 
 
