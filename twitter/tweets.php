@@ -26,12 +26,6 @@ class Tweets {
         $this->_tweet = new TwitterOAuth( $this->_CONSUMER_KEY, $this->_CONSUMER_SECRET, $this->_OAUTH_TOKEN, $this->_OAUTH_TOKEN_SECRET );
     }
 
-    public function set_consumer_key($info){
-        $this->_CONSUMER_KEY = $info;
-    }
-
-
-
     public function getTweets()
     {
         if($this->is_cached('tweet')){
