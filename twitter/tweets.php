@@ -39,7 +39,7 @@ class Tweets {
             $connection->host = "https://api.twitter.com/1.1/";
             $connection->ssl_verifypeer = TRUE;
             $connection->content_type = 'application/x-www-form-urlencoded';
-            $tweets = $connection->get('http://api.twitter.com/1.1/statuses/user_timeline.json?screen_name='.$this->_username.'&count='.$this->_count);
+            $tweets = $connection->get('https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name='.$this->_username.'&count='.$this->_count);
 
             // !$tweets->errors() (rate limit exceeded) 100 API calls per hour limit: https://blog.twitter.com/2008/what-does-rate-limit-exceeded-mean-updated
             if(!empty($tweets) && !isset($tweets->errors)){
